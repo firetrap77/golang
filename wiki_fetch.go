@@ -151,7 +151,7 @@ fullUrl := fmt.Sprintf("https://en.wikipedia.org/wiki/%s",clean_title)
     attachment1.AddAction(slack.Action { Type: "button", Text: title, Url: fullUrl, Style: "primary" })
     //attachment1.AddAction(slack.Action { Type: "button", Text: "Cancel", Url: "https://flights.example.com/abandon/r123456", Style: "danger" })
     payload := slack.Payload {
-      Text: "Hello from my golang code",
+	    Text: "Check this out: " + fullUrl,
       Username: "robot",
       Channel: "#general",
       IconEmoji: ":monkey_face:",
